@@ -1,14 +1,13 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Col, Container, NavbarBrand, Row} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import {BsArrowRight} from "react-icons/bs";
 
 const PostedWork = ({work}) => {
-    let dirty = '';
-    if (work.id === 0) {dirty = 'fixPad'} else {dirty = 'p-0'};
+
     return (
         <LinkContainer to={`/work/${work.id}`}>
-            <Col  className={`text-start ${dirty}`}>
+            <Col  className={`text-start p-0`}>
                 <img src={work.image} alt={work.name} className={'mb-2'} style={{
                     aspectRatio: '0.8',
                     width: '100%',
@@ -58,23 +57,21 @@ const FeaturedWorks = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
             }}>
-                <div className={'colorTrans py-3'}>
-                    <Container>
+                <div className={'colorTrans py-5'}>
+                    <Container className={'py-3'}>
                         <Row className={'text-white'}>
-                            <Col md={'3'}>
-                                <NavbarBrand className={'colorTheme'} style={{
-                                    color: '#FF1744'
-                                }}>
+                            <Col md={'3'} className='verticalCenter'>
+                                <h5 className={'text-secondary'}>
                                     Featured Works
-                                </NavbarBrand>
+                                </h5>
                             </Col>
-                            <Col md={'6'}>
+                            <Col md={'5'} className={'text-start'}>
                                 <p>
                                     We dont only sell products or part we are also a well-known contractor in the region
                                 </p>
                             </Col>
-                            <Col md={'3'}>
-                                <LinkContainer to={'/works'}>
+                            <Col md={'4'} className={'verticalCenter ps-3'}>
+                                <LinkContainer to={'/portfolio'}>
                                     <span>More Works <BsArrowRight/></span>
                                 </LinkContainer>
                             </Col>

@@ -9,18 +9,25 @@ import Home from "./screens/Home";
 import ErrorPage from "./screens/404";
 import Auction from "./screens/Auction";
 import Search from "./screens/Search";
+import Portfolio from "./screens/Portfolio";
 
 function App() {
     return (
-        <div className="App">
+        <div className="App" style={{
+            maxWidth: '100vw',
+            height: '100vh'
+        }}>
             <BrowserRouter>
                 <Header/>
-                <Routes>
+                <div style={{
+                    minHeight: '100%'
+                }}><Routes>
                     <Route path={'*'} element={<ErrorPage/>}/>
                     <Route element={<Home/>} path={'/'}/>
+                    <Route element={<Portfolio/>} path={'/portfolio'}/>
                     <Route path={'/auction/:id'} element={<Auction/>}/>
                     <Route path={'/search/:keywords'} element={<Search/>}/>
-                </Routes>
+                </Routes></div>
                 <Footer/>
 
             </BrowserRouter>

@@ -63,6 +63,7 @@ const Home = () => {
             </section>
             <FeaturedWorks/>
             <section>
+
                <Row className={'my-4 py-3 px-2'}>
                    <Col md={'3'}>
                        <h4>Market Sectors</h4>
@@ -75,10 +76,10 @@ const Home = () => {
             </section>
             <section className={'py-3 mt-4'}>
                 <Row>
-                    <Col>
-                        <h2>Real Factory's Story</h2>
+                    <Col md={'6'}>
+                        <h2>Koiga Construction's Story</h2>
                     </Col>
-                    <Col className={'text-start'}>
+                    <Col md={'6'} className={'text-start'}>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a dolor faucibus, bibendum
                             nunc eget, dapibus mauris. Cras ac augue nibh. Orci varius natoque penatibus et magnis dis
