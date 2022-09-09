@@ -1,0 +1,49 @@
+
+@import "variables.scss";
+/* change the colors */
+$secondary: #FF1744;
+$border-color: #262626;
+//$primary: #FF1744;
+//$danger: #dd0000;
+//$success: lime;
+//$warning: orange;
+//$info: aqua;
+
+$body-bg: #f3f3f0;
+
+.customCenter {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column
+};
+
+.verticalCenter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.colorTheme {
+color: #FF1744;
+}
+.colorTrans{
+    background-color: rgba(38,38,38,0.9);
+}
+.colorThemeTrans{
+    background-color: rgba(255,23,68,0.9);
+}
+.fillSpace {
+    width: 100%;
+    height: 100%;
+}
+.fixPad {
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: 0 !important;
+}
+.footerBorder{
+    border-right: #262626;
+}
+@import '~bootstrap/scss/bootstrap.scss';
+@import "_bootswatch.scss";
+
