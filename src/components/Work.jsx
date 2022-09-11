@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, CardImg, Col, NavLink, Row} from "react-bootstrap";
+import {Card, CardImg, Col} from "react-bootstrap";
 import {colors} from "../podo/TempData";
 import {LinkContainer} from "react-router-bootstrap";
 import {BsArrowRight} from "react-icons/bs";

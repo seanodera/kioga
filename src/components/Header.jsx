@@ -2,15 +2,15 @@ import React from 'react'
 import {Button, Container, Nav, Navbar, NavLink} from "react-bootstrap";
 import NavbarCollapse from "react-bootstrap/NavbarCollapse";
 import {LinkContainer} from 'react-router-bootstrap'
-import {FaSearch} from "react-icons/fa";
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 const Header = () => {
   return (
     <header>
-      <Navbar variant={'dark'} bg={'primary'} sticky={'top'}>
+
+      <Navbar variant={'dark'} bg={'primary'} expand='lg' fixed='top' >
         <Container>
-          <NavbarToggle />
-          <NavbarCollapse className={'mr-auto'}>
+          <NavbarToggle aria-controls="basic-navbar-nav"/>
+          <NavbarCollapse id={'basic-navbar-nav'} className={'mr-auto'}>
             <Nav>
               <LinkContainer className={'mx-1'} to={'/'}>
                 <NavLink>
@@ -40,12 +40,8 @@ const Header = () => {
               {/*</LinkContainer>*/}
             </Nav>
           </NavbarCollapse>
-          <Container fluid/>
-          <LinkContainer className={'mx-1'} to={'/search'}>
-                <NavLink>
-                  <FaSearch size={18}/>
-                </NavLink>
-              </LinkContainer>
+          
+   
               {/*<LinkContainer className={'mx-1'} to={'/cart'}>*/}
               {/*  <NavLink>*/}
               {/*    <FaCartArrowDown size={18}/>*/}
@@ -53,8 +49,9 @@ const Header = () => {
               {/*</LinkContainer>*/}
               
               <Button className='ms-2' variant='outline-secondary' size='sm'>
-                Quote
+                Get Quote
               </Button>
+
         </Container>
       </Navbar>
     </header>

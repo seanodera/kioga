@@ -50,5 +50,5 @@ let works = [{
 
 let colors = ['#76ff03', '#1DE9B6', '#FF1744', '#00E5FF', '#C6FF00', '#FFC400', '#FF9100', '#FF3d00', '#F50057']
 
-let images = ['/assets/image1.jpg', '/assets/image2.jpg', '/assets/image3.jpg', '/assets/image4.jpg', '/assets/image5.jpg', '/assets/image6.jpg', '/assets/image7.jpg', '/assets/image8.jpg', '/assets/image9.jpg', '/assets/image.10jpg', '/assets/aero1.jpg', '/assets/aero2.jpg', '/assets/const1.jpg', '/assets/const2.jpg', '/assets/cover.jpg', '/assets/error.jpg', '/assets/rail1.jpg', '/assets/rail2.jpg', '/assets/wind1.jpg', '/assets/wind2.jpg',]
+let images = ['/assets/image1.jpg', '/assets/image2.jpg', '/assets/image3.jpg', '/assets/image4.jpg', '/assets/image5.jpg', '/assets/image6.jpg', '/assets/image7.jpg', '/assets/image8.jpg', '/assets/image9.jpg', '/assets/image.10jpg', '/assets/aero1.jpg', '/assets/aero2.jpg', '/assets/const1.jpg', '/assets/const2.jpg', '/assets/cover.jpg', '/assets/error.jpg', '/assets/rail1.jpg', '/assets/rail2.jpg', '/assets/wind1.jpg', '/assets/wind2.jpg','/assets/kenya.jpg']
 export {works, colors, images}

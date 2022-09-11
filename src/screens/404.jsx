@@ -4,11 +4,12 @@ import {LinkContainer} from "react-router-bootstrap";
 const ErrorPage = () => {
   return (
     <div className={'py-3 fillSpace'} style={{
-        backgroundColor: '#f3f3f0'
+        backgroundColor: '#f3f3f0',
+        width: '100vw',height: '100%'
     }}>
       <div style={{
           width: '100%'
-      }}><img src={'/assets/error.jpg'} style={{
+      }}><img src={'/assets/error.jpg'} alt={'An error occured'} style={{
           width:'80%',
           height: '20%',
           objectFit: 'cover'

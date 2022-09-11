@@ -12,7 +12,8 @@ const HomeAd = () => {
                     <div className='py-4' style={{
                         textAlign: 'center',
                         width: '100vw',
-                        height: '40vw',
+                       
+                       aspectRatio: '2.5',
                         backdropFilter: 'contrast(80%)',
                         WebkitBackdropFilter: 'contrast(80%)',
                     }}>

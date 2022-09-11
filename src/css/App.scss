@@ -12,7 +12,12 @@ $border-color: #262626;
 //$info: aqua;
 
 $body-bg: #f3f3f0;
-
+.common-bg{
+    background-color: #262626;
+}
+.img{
+    object-fit: cover;
+}
 .customCenter {
     display: flex;
     align-items: center; 

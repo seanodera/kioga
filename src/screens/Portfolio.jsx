@@ -3,7 +3,7 @@ import {Carousel, CarouselItem, Col, Container, NavLink, Row} from "react-bootst
 import {BsArrowRight} from "react-icons/bs";
 import {LinkContainer} from "react-router-bootstrap";
 import Work from "../components/Work";
-import {colors, works} from "../podo/TempData";
+import {works} from "../podo/TempData";
 
 
 const Portfolio = () => {
@@ -55,7 +55,7 @@ const Portfolio = () => {
                    </Col>
                </Row>
 
-               <Row className={'gx-3 gy-3 pb-3'}>
+               <Row className={'gx-3 gy-3 pb-5'}>
                    {works.map((_work, index) => <Work key={index} work={_work}/>)}
                </Row>
            </Container>

@@ -25,7 +25,7 @@ const PostedWork = ({work}) => {
 }
 const FeaturedWorks = () => {
     let tempList = []
-    for (let i =0; i<5;i++){
+    for (let i =0; i<4;i++){
         tempList.push(works.at(i));
     }
     return (
