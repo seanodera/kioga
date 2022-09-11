@@ -26,7 +26,7 @@ const Footer = () => {
                             <LinkContainer to={'/'}>
                               <span className='d-flex flex-row ' style={{
                                   alignItems: 'center',
-                              }}><h4 className={'text-white'} >Koiga</h4> <h4 className={'text-secondary'}>Construction</h4></span>
+                              }}><h4 className={'text-white'} >Kioga</h4> <h4 className={'text-secondary'}>Construction</h4></span>
                             </LinkContainer>
 
                             <p style={{
@@ -36,7 +36,7 @@ const Footer = () => {
                                 fontSize: '0.875rem',
                             }}>
                                 A construction Company based in Nairobi.
-                                Been in the industry since 2007 and we have built everything from residential to commercial properties
+                                Been in the industry since 2008 and we have built everything from residential to commercial properties
                             </p>
                         </Col>
                         <Col className={'border-end ms-4'}>

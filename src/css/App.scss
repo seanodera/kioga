@@ -3,6 +3,8 @@
 /* change the colors */
 $secondary: #FF1744;
 $border-color: #262626;
+
+//$dark: #262626;
 //$primary: #FF1744;
 //$danger: #dd0000;
 //$success: lime;
@@ -24,8 +26,23 @@ $body-bg: #f3f3f0;
     flex-direction: column;
 }
 
+.colorTheme-bg{
+    background-color: #FF1744;
+}
+
 .colorTheme {
 color: #FF1744;
+}
+.limitLines{
+    display: -webkit-box;
+    max-lines: 3 ;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.p{
+    display: inline;
 }
 .colorTrans{
     background-color: rgba(38,38,38,0.9);

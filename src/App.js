@@ -10,6 +10,7 @@ import ErrorPage from "./screens/404";
 import Auction from "./screens/Auction";
 import Search from "./screens/Search";
 import Portfolio from "./screens/Portfolio";
+import {Container} from "react-bootstrap";
 
 function App() {
     return (
@@ -19,15 +20,16 @@ function App() {
         }}>
             <BrowserRouter>
                 <Header/>
-                <div style={{
-                    minHeight: '100%'
+                <Container fluid className={'px-0'} style={{
+                    minHeight: '100%',
+
                 }}><Routes>
                     <Route path={'*'} element={<ErrorPage/>}/>
                     <Route element={<Home/>} path={'/'}/>
                     <Route element={<Portfolio/>} path={'/portfolio'}/>
                     <Route path={'/auction/:id'} element={<Auction/>}/>
                     <Route path={'/search/:keywords'} element={<Search/>}/>
-                </Routes></div>
+                </Routes></Container>
                 <Footer/>
 
             </BrowserRouter>

@@ -1,7 +1,8 @@
 import React from 'react'
-import {Col, Container, NavbarBrand, Row} from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import {BsArrowRight} from "react-icons/bs";
+import {works} from "../podo/TempData";
 
 const PostedWork = ({work}) => {
 
@@ -23,33 +24,10 @@ const PostedWork = ({work}) => {
     )
 }
 const FeaturedWorks = () => {
-    let works = [
-        {
-            image: '/assets/image1.jpg',
-            name: 'Tunnel Somewhere',
-            id: 0, type: 'road'
-        },
-        {
-            image: '/assets/image2.jpg',
-            name: 'Road Upgrade',
-            id: 1, type: 'repair'
-        },
-        {
-            image: '/assets/image3.jpg',
-            name: 'Apartment Complex',
-            id: 2, type: 'residentual buildings'
-        },
-        {
-            image: '/assets/image5.jpg',
-            name: 'Port Of Somewhere',
-            id: 4, type: 'Heavy Equipment Installation'
-        },
-        {
-            image: '/assets/image6.jpg',
-            name: 'Power Lines',
-            id: 5, type: 'remote location'
-        }
-    ]
+    let tempList = []
+    for (let i =0; i<5;i++){
+        tempList.push(works.at(i));
+    }
     return (
         <section>
             <div style={{
@@ -78,13 +56,13 @@ const FeaturedWorks = () => {
                         </Row>
                     </Container>
                 </div>
-                <div>
+                <Container fluid>
                     <Row className={''} style={{
                         backgroundColor: 'rgba(255,23,68,0.9)'
                     }}>
-                        {works.map((work, index) => <PostedWork key={index} work={work}/>)}
+                        {tempList.map((work, index) => <PostedWork key={index} work={work}/>)}
                     </Row>
-                </div>
+                </Container>
             </div>
 
         </section>

@@ -2,12 +2,12 @@ import React from 'react'
 import {Button, Container, Nav, Navbar, NavLink} from "react-bootstrap";
 import NavbarCollapse from "react-bootstrap/NavbarCollapse";
 import {LinkContainer} from 'react-router-bootstrap'
-import {FaCartArrowDown, FaSearch} from "react-icons/fa";
+import {FaSearch} from "react-icons/fa";
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 const Header = () => {
   return (
     <header>
-      <Navbar variant={'dark'} bg={'primary'}>
+      <Navbar variant={'dark'} bg={'primary'} sticky={'top'}>
         <Container>
           <NavbarToggle />
           <NavbarCollapse className={'mr-auto'}>
@@ -27,16 +27,12 @@ const Header = () => {
                   Portfolio
                 </NavLink>
               </LinkContainer>
-              <LinkContainer className={'mx-1'} to={'/blog'}>
+              <LinkContainer className={'mx-1'} to={'/about'}>
                 <NavLink>
-                  Blog
+                  About
                 </NavLink>
               </LinkContainer>
-              <LinkContainer className={'mx-1'} to={'/features'}>
-                <NavLink>
-                  Features
-                </NavLink>
-              </LinkContainer>
+
               {/*<LinkContainer className={'mx-1'} to={'/shop'}>*/}
               {/*  <NavLink>*/}
               {/*   Shop*/}

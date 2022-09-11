@@ -1,14 +1,16 @@
 import React from 'react'
-import {Col, Row} from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 import HomeAd from '../components/HomeAd';
 import FeaturedWorks from "../components/FeaturedWorks";
 import MarketSection from "../components/MarketSection";
 
 const Home = () => {
     return (
-        <>
+        <div style={{
+            backgroundColor: '#262626',
+        }}>
             <HomeAd/>
-            <section>
+            <Container fluid>
                 <Row style={{
                     height: '150px'
                 }}>
@@ -60,24 +62,15 @@ const Home = () => {
                         </div>
                     </Col>
                 </Row>
-            </section>
+            </Container>
             <FeaturedWorks/>
-            <section>
 
-               <Row className={'my-4 py-3 px-2'}>
-                   <Col md={'3'}>
-                       <h4>Market Sectors</h4>
-                   </Col>
-                   <Col md={'9'}>
-                       <hr/>
-                   </Col>
-               </Row>
                 <MarketSection/>
-            </section>
-            <section className={'py-3 mt-4'}>
-                <Row>
+
+            <Container fluid >
+                <Row className={'py-3 px-0 mt-4 text-white'}>
                     <Col md={'6'}>
-                        <h2>Koiga Construction's Story</h2>
+                        <h2 className={'text-white'}>Kioga Construction's Story</h2>
                     </Col>
                     <Col md={'6'} className={'text-start'}>
                         <p>
@@ -95,8 +88,8 @@ const Home = () => {
 
                     </Col>
                 </Row>
-            </section>
-        </>
+            </Container>
+        </div>
     )
 }
 

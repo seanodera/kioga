@@ -3,7 +3,9 @@ import {Button} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 const ErrorPage = () => {
   return (
-    <div className={'py-3'} >
+    <div className={'py-3 fillSpace'} style={{
+        backgroundColor: '#f3f3f0'
+    }}>
       <div style={{
           width: '100%'
       }}><img src={'/assets/error.jpg'} style={{

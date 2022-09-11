@@ -1,5 +1,5 @@
 import React from "react";
-import {Col, Row} from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 
 
 const SectionTypeA = ({image, backgroundImage, title, text}) => {
@@ -58,7 +58,15 @@ const SectionTypeB = ({image, backgroundImage, title, text}) => {
 
 const MarketSection = () => {
 
-    return (<section>
+    return (<Container fluid >
+        <Row className={'my-4 py-3 px-2'}>
+            <Col md={'3'}>
+                <h4 className={'text-white'}>Market Sectors</h4>
+            </Col>
+            <Col md={'9'}>
+                <hr/>
+            </Col>
+        </Row>
         <SectionTypeA image={'/assets/const1.jpg'} backgroundImage={'/assets/const2.jpg'}
                       title={'Construction & Engineering'}
                       text={'We provides a comprehensive range of products and\n' +
@@ -75,7 +83,7 @@ const MarketSection = () => {
             'steels are being used in commercial and military aerospace projects\n' +
             'around the world.'}/>
 
-    </section>)
+    </Container>)
 }
 
 export default MarketSection;
