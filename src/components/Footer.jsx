@@ -2,7 +2,13 @@ import React from 'react'
 import {Col, Container, Nav, Navbar, NavLink, Row} from 'react-bootstrap'
 import {FaLocationArrow, FaMailBulk, FaPhone} from 'react-icons/fa'
 import {LinkContainer} from 'react-router-bootstrap'
-import {AiOutlineFacebook, AiOutlineInstagram, AiOutlineMail, AiOutlineWhatsApp} from "react-icons/ai";
+import {
+    AiOutlineFacebook,
+    AiOutlineInstagram,
+    AiOutlineLinkedin,
+    AiOutlineMail,
+    AiOutlineWhatsApp
+} from "react-icons/ai";
 
 
 const FooterNav = ({to, name}) => {
@@ -59,7 +65,7 @@ const Footer = () => {
                             <p><FaMailBulk className='colorTheme'/> contact@site.com</p>
                             <Row className={''}>
                                 <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineWhatsApp size={24}/></a></Col>
-                                <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineMail size={24}/></a></Col>
+                                <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineLinkedin size={24}/></a></Col>
                                 <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineFacebook size={24}/></a></Col>
                                 <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineInstagram size={24}/></a></Col>
                                 <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineMail size={24}/></a></Col>

@@ -12,21 +12,19 @@ const HomeAd = () => {
                     <div className='py-4' style={{
                         textAlign: 'center',
                         width: '100vw',
-                       
                        aspectRatio: '2.5',
                         backdropFilter: 'contrast(80%)',
                         WebkitBackdropFilter: 'contrast(80%)',
                     }}>
+
                         <Col className='d-flex flex-column justify-content-around align-items-center' style={{
                             height: '100%'
                         }}>
-                            <h3 style={{
-                                color: '#FF1744'
-                            }}> Welcome To</h3>
+                            <h3 className={'text-secondary'}> Welcome To</h3>
                             <span className='d-flex flex-row ' style={{
                                 alignItems: 'center',
-                            }}><h1 style={{fontSize: '60px',}}>Kioga</h1> <h1
-                                style={{fontSize: '60px', color: '#ff1744'}}>Construction</h1></span>
+                            }}><h1 style={{fontSize: '60px',}}>Kioga</h1> <h1 className={'text-secondary'}
+                                style={{fontSize: '60px',}}>Construction</h1></span>
                             <div style={{
                                 maxWidth: '50%',
                             }}><p style={{color: 'white'}}>During our long history, we have built some of the most prominent

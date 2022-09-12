@@ -1,7 +1,13 @@
 import React from 'react'
 import {Col, Container, Row} from "react-bootstrap";
 import {images} from "../podo/TempData";
-import {AiOutlineFacebook, AiOutlineInstagram, AiOutlineMail, AiOutlineWhatsApp} from "react-icons/ai";
+import {
+    AiOutlineFacebook,
+    AiOutlineInstagram,
+    AiOutlineLinkedin,
+    AiOutlineMail,
+    AiOutlineWhatsApp
+} from "react-icons/ai";
 
 const About = () => {
     return (<Container className={'py-5'}>
@@ -14,7 +20,7 @@ const About = () => {
                 }}/>
                 <Row className={'px-5 mt-2'}>
                     <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineWhatsApp size={24}/></a></Col>
-                    <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineMail size={24}/></a></Col>
+                    <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineLinkedin size={24}/></a></Col>
                     <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineFacebook size={24}/></a></Col>
                     <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineInstagram size={24}/></a></Col>
                     <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineMail size={24}/></a></Col>

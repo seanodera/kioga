@@ -14,7 +14,7 @@ const PostedWork = ({work}) => {
                     width: '100%',
                     objectFit: 'cover'
                 }}/>
-               <div className={'ms-1'}>
+               <div className={'ms-1 text-white'}>
                    <h5>{work.name}</h5>
                    <p>{work.type}</p>
                </div>
@@ -57,9 +57,7 @@ const FeaturedWorks = () => {
                     </Container>
                 </div>
                 <Container fluid>
-                    <Row className={''} style={{
-                        backgroundColor: 'rgba(255,23,68,0.9)'
-                    }}>
+                    <Row className={'colorThemeTrans'} >
                         {tempList.map((work, index) => <PostedWork key={index} work={work}/>)}
                     </Row>
                 </Container>

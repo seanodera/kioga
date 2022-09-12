@@ -32,11 +32,11 @@ $body-bg: #f3f3f0;
 }
 
 .colorTheme-bg{
-    background-color: #FF1744;
+    background-color: $secondary;
 }
 
 .colorTheme {
-color: #FF1744;
+color: $secondary;
 }
 .limitLines{
     display: -webkit-box;
@@ -53,7 +53,7 @@ color: #FF1744;
     background-color: rgba(38,38,38,0.9);
 }
 .colorThemeTrans{
-    background-color: rgba(255,23,68,0.9);
+    background-color: rgba(255, 23, 68,0.95);
 }
 .fillSpace {
     width: 100%;

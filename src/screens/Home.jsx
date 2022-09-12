@@ -19,10 +19,8 @@ const Home = () => {
                         backgroundSize: 'cover',
                         height: '100%',
                     }}>
-                        <div className='py-3 customCenter' style={{
+                        <div className='py-3 customCenter colorThemeTrans' style={{
                             height: '100%',
-                            backgroundColor: 'rgba(255, 23, 69, 0.9)',
-                            top: '50%'
                         }}>
                             <h5>Punctual Delivery Time</h5>
                             <p style={{

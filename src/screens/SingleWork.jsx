@@ -2,6 +2,8 @@ import React from 'react'
 import {Button, Col, Container, ListGroup, ListGroupItem, Row} from "react-bootstrap";
 import {works} from "../podo/TempData";
 import {useParams} from "react-router";
+import {LinkContainer} from "react-router-bootstrap";
+
 
 const SingleWork = () => {
   let {id} = useParams()
@@ -70,9 +72,11 @@ const SingleWork = () => {
                       </Row>
                   </ListGroupItem>
                   <ListGroupItem>
-                      <Button variant={'secondary'}>
-                          Get Quote
-                      </Button>
+                      <LinkContainer to={'/contact'}>
+                          <Button variant={'secondary'}>
+                              Get Quote
+                          </Button>
+                      </LinkContainer>
                   </ListGroupItem>
               </ListGroup>
           </Col>

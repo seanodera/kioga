@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header>
 
-      <Navbar variant={'dark'} bg={'primary'} expand='lg' fixed='top' >
+      <Navbar variant={'dark'} bg={'primary'} expand='lg'  >
         <Container>
           <NavbarToggle aria-controls="basic-navbar-nav"/>
           <NavbarCollapse id={'basic-navbar-nav'} className={'mr-auto'}>
@@ -48,9 +48,11 @@ const Header = () => {
               {/*  </NavLink>*/}
               {/*</LinkContainer>*/}
               
-              <Button className='ms-2' variant='outline-secondary' size='sm'>
-                Get Quote
-              </Button>
+              <LinkContainer to={'/contact'}>
+                <Button  className='ms-2' variant='outline-secondary' size='sm'>
+                  Get Quote
+                </Button>
+              </LinkContainer>
 
         </Container>
       </Navbar>
