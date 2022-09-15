@@ -3,7 +3,7 @@ import {Carousel, CarouselItem, Col, Container, NavLink, Row} from "react-bootst
 import {BsArrowRight} from "react-icons/bs";
 import {LinkContainer} from "react-router-bootstrap";
 import Work from "../components/Work";
-import {works} from "../podo/TempData";
+import {works} from "../podo/SiteData";
 
 
 const Portfolio = () => {
@@ -14,34 +14,37 @@ const Portfolio = () => {
         }}>
             <section className={'bg-dark'}>
                 <Carousel>
-                    {works.map((work, index) => <CarouselItem className={'colorTheme-bg py-3 verticalCenter'} style={{
-                        width: '100vw',
-                        aspectRatio: '3.5',
+                    {works.map((work, index) => {
 
-                    }}>
-                        <Row className={' fillSpace my-5 py-3 mx-0'}>
-                            <Col className={'fillSpace customCenter'} md={'6'}>
-                                <img src={work.image} alt={'Ad'} style={{
-                                    objectFit: 'cover',
-                                    height: '26vw', aspectRatio: '1'
-                                }}/>
-                            </Col>
-                            <Col className={'verticalCenter text-start'}>
-                                <h4 className={'text-primary'}>{work.name}</h4>
+                        return (<CarouselItem className={'colorTheme-bg py-3 verticalCenter'} style={{
+                            width: '100vw',
+                            aspectRatio: '3.5',
 
-
-                                <p className={'text-white overflow-hidden'} style={{
-                                    width: '80%', maxHeight: '50%'
-                                }}>{work.description}</p>
-
-                                <LinkContainer to={'/portfolio/' + work.id}>
-                                    <NavLink><span>View More <BsArrowRight/></span></NavLink>
-                                </LinkContainer>
+                        }}>
+                            <Row className={' fillSpace my-5 py-3 mx-0'}>
+                                <Col className={'fillSpace customCenter'} md={'6'}>
+                                    <img src={work.image} alt={'Ad'} style={{
+                                        objectFit: 'cover',
+                                        height: '26vw', aspectRatio: '1'
+                                    }}/>
+                                </Col>
+                                <Col className={'verticalCenter text-start'}>
+                                    <h4 className={'text-primary'}>{work.name}</h4>
 
 
-                            </Col>
-                        </Row>
-                    </CarouselItem>)}
+                                    <p className={'text-white overflow-hidden'} style={{
+                                        width: '80%', maxHeight: '50%'
+                                    }}>{work.description}</p>
+
+                                    <LinkContainer to={'/portfolio/' + work.id}>
+                                        <NavLink><span>View More <BsArrowRight/></span></NavLink>
+                                    </LinkContainer>
+
+
+                                </Col>
+                            </Row>
+                        </CarouselItem>)
+                    })}
 
                 </Carousel>
             </section>

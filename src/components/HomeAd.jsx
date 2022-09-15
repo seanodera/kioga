@@ -1,6 +1,6 @@
 import React from 'react'
 import {Button, Carousel, CarouselItem, Col} from 'react-bootstrap'
-
+import {LinkContainer} from "react-router-bootstrap";
 const HomeAd = () => {
     return (<section>
         <Carousel>
@@ -31,9 +31,11 @@ const HomeAd = () => {
                                 buildings in Kenya with inhouse training skills</p>
                             </div>
                             <div>
-                                <Button>
-                                    Learn More
-                                </Button>
+                               <LinkContainer to={'/about'}>
+                                   <Button >
+                                       Learn More
+                                   </Button>
+                               </LinkContainer>
                             </div>
                         </Col>
                     </div>

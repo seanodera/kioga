@@ -2,7 +2,7 @@ import React from 'react'
 import {Col, Container, Row} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import {BsArrowRight} from "react-icons/bs";
-import {works} from "../podo/TempData";
+import {works} from "../podo/SiteData";
 
 const PostedWork = ({work}) => {
 
@@ -10,7 +10,7 @@ const PostedWork = ({work}) => {
         <LinkContainer to={`/work/${work.id}`}>
             <Col  className={`text-start p-0`}>
                 <img src={work.image} alt={work.name} className={'mb-2'} style={{
-                    aspectRatio: '0.8',
+                    aspectRatio: '1',
                     width: '100%',
                     objectFit: 'cover'
                 }}/>

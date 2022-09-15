@@ -3,6 +3,9 @@ import {Col, Container, Row} from 'react-bootstrap';
 import HomeAd from '../components/HomeAd';
 import FeaturedWorks from "../components/FeaturedWorks";
 import MarketSection from "../components/MarketSection";
+import {MdOutlineHomeWork} from "react-icons/md";
+import {GiFactory, GiRailRoad} from "react-icons/gi";
+import {LinkContainer} from 'react-router-bootstrap'
 
 const Home = () => {
     return (
@@ -61,11 +64,54 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
+            <Container className={'py-5'}>
+                <Row>
+                    <Col className={'text-white'}>
+                        <MdOutlineHomeWork className={'my-3'}  size={40}/>
+
+                        <h5 className={'text-secondary'}>Residential Property</h5>
+                        <p className={'limitLines'}>Due to the fact that it is almost every person's dream to have their
+                            own home and the freedom that comes with it, it is in our best interest to ensure that we
+                            help these dreamers become achievers,in that regard, from start to finish.
+                            The networks and relationships we have with manufacturers and suppliers of building
+                            material, furnishing and home improvement equipment enables us to do high quality work at
+                            lower prices as compared to if one decides to get the work done independently or through
+                            alternative contractors.</p>
+                        <LinkContainer to={'/sector/residential'}>
+                            <p className={'text-secondary'}>Learn More</p>
+                        </LinkContainer>
+                    </Col>
+                    <Col className={'text-white'}>
+                        <GiFactory className={'my-3'} size={40}/>
+                        <br/>
+                        <h5 className={'text-secondary'}>Commercial Property</h5>
+                        <p className={'limitLines'}>Real estate has proved over time that it is a very reliable and cash
+                            flow generative investment. From apartments to office buildings to warehouses to shopping
+                            centers to hotels, more and more people are putting their money in commercial properties.
+                            We provide construction solutions to individuals, developers, corporate clients and
+                            government entities in this sector.</p>
+                        <LinkContainer to={'/sector/commercial'}>
+                            <p className={'text-secondary'}>Learn More</p>
+                        </LinkContainer>
+                    </Col>
+                    <Col className={'text-white'}>
+                        <GiRailRoad className={'my-3'}  size={40}/>
+                        <br/>
+                        <h5 className={'text-secondary'}>Infrastructure</h5>
+                        <p className={'limitLines'}>We are an experienced contractor for both the national and county
+                            governments and have been offering road and railway construction services since our founding
+                            15 years ago.</p>
+                        <LinkContainer to={'/sector/infrastructure'}>
+                            <p className={'text-secondary'}>Learn More</p>
+                        </LinkContainer>
+                    </Col>
+                </Row>
+            </Container>
             <FeaturedWorks/>
 
-                <MarketSection/>
+            <MarketSection/>
 
-            <Container fluid >
+            <Container fluid>
                 <Row className={'py-3 px-0 mt-4 text-white'}>
                     <Col md={'6'}>
                         <h2 className={'text-white'}>Kioga Construction's Story</h2>
