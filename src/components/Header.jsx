@@ -17,11 +17,11 @@ const Header = () => {
                   Home
                 </NavLink>
               </LinkContainer>
-              <LinkContainer className={'mx-1'} to={'/sectors'}>
-                <NavLink>
-                  Sectors
-                </NavLink>
-              </LinkContainer>
+              {/*<LinkContainer className={'mx-1'} to={'/sectors'}>*/}
+              {/*  <NavLink>*/}
+              {/*    Sectors*/}
+              {/*  </NavLink>*/}
+              {/*</LinkContainer>*/}
               <LinkContainer className={'mx-1'} to={'/portfolio'}>
                 <NavLink>
                   Portfolio
