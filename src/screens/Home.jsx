@@ -15,12 +15,12 @@ const Home = () => {
             <HomeAd/>
             <Container fluid>
                 <Row style={{
-                    height: '150px'
+                   minHeight: '150px'
                 }}>
-                    <Col className='p-0' style={{
+                    <Col className='p-0' sm={'12'} md={'4'} style={{
                         backgroundImage: 'url("/assets/image1.jpg")',
                         backgroundSize: 'cover',
-                        height: '100%',
+                        height: '150px',
                     }}>
                         <div className='py-3 customCenter colorThemeTrans' style={{
                             height: '100%',
@@ -31,8 +31,8 @@ const Home = () => {
                             }}>99% Delivered on time</p>
                         </div>
                     </Col>
-                    <Col className='p-0' style={{
-                        height: '100%',
+                    <Col className='p-0' sm={'12'} md={'4'} style={{
+                        height: '150px',
                         backgroundImage: 'url("/assets/image2.jpg")',
                         backgroundSize: 'cover'
                     }}>
@@ -40,14 +40,15 @@ const Home = () => {
                             height: '100%',
                             backgroundColor: 'rgba(38, 38, 38, 0.6)'
                         }}>
-                            <h5>High Technology Factory</h5>
+                            <h5 >High Technology Factory</h5>
+
                             <p style={{
                                 color: 'white'
                             }}>& Environment Friendly</p>
                         </div>
                     </Col>
-                    <Col className='p-0' style={{
-                        height: '100%',
+                    <Col className='p-0' sm={'12'} md={'4'} style={{
+                        height: '150px',
                         backgroundImage: 'url("/assets/image3.jpg")',
                         backgroundSize: 'cover'
                     }}>
@@ -56,7 +57,7 @@ const Home = () => {
                             WebkitBackdropFilter: 'contrast(20%)',
                             backdropFilter: 'contrast(20%)',
                         }}>
-                            <h5>High Standard Labors</h5>
+                            <h5 >High Standard Labors</h5>
                             <p style={{
                                 color: 'white'
                             }}>99% QC Passed</p>
@@ -64,9 +65,9 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
-            <Container className={'py-5'}>
+            <Container fluid className={'py-5'}>
                 <Row>
-                    <Col className={'text-white'}>
+                    <Col sm={'12'} md={'4'} className={'text-white'}>
                         <MdOutlineHomeWork className={'my-3'}  size={40}/>
 
                         <h5 className={'text-secondary'}>Residential Property</h5>
@@ -81,7 +82,7 @@ const Home = () => {
                             <p className={'text-secondary'}>Learn More</p>
                         </LinkContainer>
                     </Col>
-                    <Col className={'text-white'}>
+                    <Col sm={'12'} md={'4'} className={'text-white'}>
                         <GiFactory className={'my-3'} size={40}/>
                         <br/>
                         <h5 className={'text-secondary'}>Commercial Property</h5>
@@ -94,7 +95,7 @@ const Home = () => {
                             <p className={'text-secondary'}>Learn More</p>
                         </LinkContainer>
                     </Col>
-                    <Col className={'text-white'}>
+                    <Col sm={'12'} md={'4'} className={'text-white'}>
                         <GiRailRoad className={'my-3'}  size={40}/>
                         <br/>
                         <h5 className={'text-secondary'}>Infrastructure</h5>

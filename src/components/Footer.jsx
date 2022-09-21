@@ -27,9 +27,9 @@ const Footer = () => {
         <footer className='bg-primary pb-3'>
             <Navbar className='bg-dark'>
 
-                <Container className='py-3 navbar-dark'>
-                    <Nav className='text-start text-white'>
-                        <Col className={'border-end footerBorder'}>
+                <Container fluid className='py-3'>
+                    <Row className='text-start text-white'>
+                        <Col sm={'12'} md={'4'} className={'border-end footerBorder'}>
                             <LinkContainer to={'/'}>
                               <span className='d-flex flex-row ' style={{
                                   alignItems: 'center',
@@ -46,32 +46,25 @@ const Footer = () => {
                                 Been in the industry since 2008 and we have built everything from residential to commercial properties
                             </p>
                         </Col>
-                        <Col className={'border-end ms-4'}>
-                            <h5 className='text-secondary'>Market Sectors</h5>
-                            <FooterNav to={'/auto'} name=' Automotive Parts & System'/>
-                            <FooterNav to={'/construction'} name='construction & Engineering'/>
-                            <FooterNav to={'/power'} name=' Power & Energy '/>
-                            <FooterNav to={'/aero'} name='Aero Space '/>
-                            <FooterNav to={'/shipsector'} name='Ship Building Industry'/>
-                            <FooterNav to={'/rail'} name='Railway'/>
+                        <Col sm={'12'} md={'4'} className={'border-end ms-4'}>
+                            <h5 className='text-secondary'>Quick Links</h5>
+                            <FooterNav to={'/portfolio'} name='Portfolio'/>
+                            <FooterNav to={'/about'} name='About'/>
                         </Col>
-                        <Col>
 
-                        </Col>
-                        <Col>
+                        <Col sm={'12'} md={'4'}>
                             <h5 className='text-secondary'>Contact Info</h5>
                             <p><FaLocationArrow className='colorTheme'/> Haile Selassie. Nairobi, Kenya</p>
                             <p><FaPhone className='colorTheme'/> +254 212345678</p>
                             <p><FaMailBulk className='colorTheme'/> contact@site.com</p>
-                            <Row className={''}>
-                                <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineWhatsApp size={24}/></a></Col>
-                                <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineLinkedin size={24}/></a></Col>
-                                <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineFacebook size={24}/></a></Col>
-                                <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineInstagram size={24}/></a></Col>
-                                <Col><a href={'https://google.com'} className={'text-white'}><AiOutlineMail size={24}/></a></Col>
+                            <Row sm={'12'}>
+                                <Col ><a href={'https://google.com'} className={'text-white'}><AiOutlineWhatsApp size={24}/></a></Col>
+                                <Col ><a href={'https://google.com'} className={'text-white'}><AiOutlineFacebook size={24}/></a></Col>
+                                <Col ><a href={'https://google.com'} className={'text-white'}><AiOutlineInstagram size={24}/></a></Col>
+                                <Col ><a href={'https://google.com'} className={'text-white'}><AiOutlineMail size={24}/></a></Col>
                             </Row>
                         </Col>
-                    </Nav>
+                    </Row>
                 </Container>
             </Navbar>
             <br/>

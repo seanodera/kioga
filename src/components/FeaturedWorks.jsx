@@ -1,5 +1,5 @@
 import React from 'react'
-import {Col, Container, Row} from "react-bootstrap";
+import {Carousel, CarouselItem, Col, Container, Row} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import {BsArrowRight} from "react-icons/bs";
 import {works} from "../podo/SiteData";
@@ -7,17 +7,17 @@ import {works} from "../podo/SiteData";
 const PostedWork = ({work}) => {
 
     return (
-        <LinkContainer to={`/work/${work.id}`}>
-            <Col  className={`text-start p-0`}>
+        <LinkContainer to={`/portfolio/${work.id}`}>
+            <Col sm={'12'} md={'3'} className={`text-start p-0`}>
                 <img src={work.image} alt={work.name} className={'mb-2'} style={{
                     aspectRatio: '1',
                     width: '100%',
                     objectFit: 'cover'
                 }}/>
-               <div className={'ms-1 text-white'}>
-                   <h5>{work.name}</h5>
-                   <p>{work.type}</p>
-               </div>
+                <div className={'ms-1 text-white'}>
+                    <h5>{work.name}</h5>
+                    <p>{work.type}</p>
+                </div>
             </Col>
         </LinkContainer>
 
@@ -25,7 +25,7 @@ const PostedWork = ({work}) => {
 }
 const FeaturedWorks = () => {
     let tempList = []
-    for (let i =0; i<4;i++){
+    for (let i = 0; i < 4; i++) {
         tempList.push(works.at(i));
     }
     return (
@@ -60,6 +60,10 @@ const FeaturedWorks = () => {
                     <Row className={'colorThemeTrans'} >
                         {tempList.map((work, index) => <PostedWork key={index} work={work}/>)}
                     </Row>
+                    {/*<Carousel className={'colorThemeTrans'} >*/}
+                    {/*    {tempList.map((work, index) => <CarouselItem key={index}><PostedWork key={index}*/}
+                    {/*                                                                         work={work}/></CarouselItem>)}*/}
+                    {/*</Carousel>*/}
                 </Container>
             </div>
 

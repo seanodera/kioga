@@ -10,7 +10,7 @@ const Work = ({work}) => {
       backgroundColor: colors.at(2),height: '100%'
     }}>
       <Card className={'rounded-2 overflow-hidden pb-2 border-0'} style={{
-        backgroundColor: colors.at(work.id),
+        backgroundColor: colors.at(2),
       }} >
         <CardImg variant={'top'} src={work.image} style={{
           objectFit: 'cover',
