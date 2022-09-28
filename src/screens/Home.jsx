@@ -25,10 +25,10 @@ const Home = () => {
                         <div className='py-3 customCenter colorThemeTrans' style={{
                             height: '100%',
                         }}>
-                            <h5>Punctual Delivery Time</h5>
+                            <h5>Punctual Completion Time</h5>
                             <p style={{
                                 color: 'black'
-                            }}>99% Delivered on time</p>
+                            }}>99% Completed on time</p>
                         </div>
                     </Col>
                     <Col className='p-0' sm={'12'} md={'4'} style={{
@@ -40,7 +40,7 @@ const Home = () => {
                             height: '100%',
                             backgroundColor: 'rgba(38, 38, 38, 0.6)'
                         }}>
-                            <h5 >High Technology Factory</h5>
+                            <h5 >High Technology </h5>
 
                             <p style={{
                                 color: 'white'

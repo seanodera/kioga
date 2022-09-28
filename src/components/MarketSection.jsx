@@ -73,15 +73,15 @@ const MarketSection = () => {
                           'techniques to create value for the construction industry and\n' +
                           'support sustainable development.'}/>
         <SectionTypeB image={'/assets/rail1.jpg'} backgroundImage={'/assets/rail2.jpg'} title={'Railway'}
-                      text={'We provides a wide range of high performance rail products and\n' +
-                          'railway infrastructure services to the international rail industry.'}/>
+                      text={'We provides a wide range of railway infrastructure services \n' +
+                          ' to the international rail industry.'}/>
         <SectionTypeA image={'/assets/wind1.jpg'} backgroundImage={'/assets/wind2.jpg'} title={'Power & Energy'}
-                      text={'High quality material produced by Real Factory backed by\n' +
+                      text={'High quality material used to build energy sources backed by the\n' +
                           'support of our expert consultants to fulfill a whole range of\n' +
                           'applications in the enegy market.'}/>
-        <SectionTypeB image={'/assets/aero1.jpg'} backgroundImage={'/assets/aero2.jpg'} title={'Aero Space'} text={'We are a leading Aerospace steels manufacturer. Our special grade\n' +
-            'steels are being used in commercial and military aerospace projects\n' +
-            'around the world.'}/>
+        {/*<SectionTypeB image={'/assets/aero1.jpg'} backgroundImage={'/assets/aero2.jpg'} title={'Aero Space'} text={'We are a leading Aerospace steels manufacturer. Our special grade\n' +*/}
+        {/*    'steels are being used in commercial and military aerospace projects\n' +*/}
+        {/*    'around the world.'}/>*/}
 
     </Container>)
 }

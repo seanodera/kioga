@@ -27,7 +27,7 @@ const Footer = () => {
         <footer className='bg-primary pb-3'>
             <Navbar className='bg-dark'>
 
-                <Container fluid className='py-3'>
+                <Container className='py-3'>
                     <Row className='text-start text-white'>
                         <Col sm={'12'} md={'4'} className={'border-end footerBorder'}>
                             <LinkContainer to={'/'}>
@@ -46,7 +46,7 @@ const Footer = () => {
                                 Been in the industry since 2008 and we have built everything from residential to commercial properties
                             </p>
                         </Col>
-                        <Col sm={'12'} md={'4'} className={'border-end ms-4'}>
+                        <Col sm={'12'} md={'4'} className={'border-end '}>
                             <h5 className='text-secondary'>Quick Links</h5>
                             <FooterNav to={'/portfolio'} name='Portfolio'/>
                             <FooterNav to={'/about'} name='About'/>
@@ -54,8 +54,8 @@ const Footer = () => {
 
                         <Col sm={'12'} md={'4'}>
                             <h5 className='text-secondary'>Contact Info</h5>
-                            <p><FaLocationArrow className='colorTheme'/> Haile Selassie. Nairobi, Kenya</p>
-                            <p><FaPhone className='colorTheme'/> +254 212345678</p>
+                            <p><FaLocationArrow className='colorTheme'/> Some Road. City, Country</p>
+                            <p><FaPhone className='colorTheme'/> +1 (515) 567-2929</p>
                             <p><FaMailBulk className='colorTheme'/> contact@site.com</p>
                             <Row sm={'12'}>
                                 <Col ><a href={'https://google.com'} className={'text-white'}><AiOutlineWhatsApp size={24}/></a></Col>

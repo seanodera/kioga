@@ -12,10 +12,10 @@ const SingleWork = () => {
   return (
     <Container className={'pb-5'}>
       <Row className={'my-4 py-1 pe-2 ps-0'}>
-        <Col md={'3'}>
+        <Col md={'3'} >
           <h4 className={'text-white text-start'}>{work.name}</h4>
         </Col>
-        <Col md={'9'}>
+        <Col md={'9'} >
           <hr/>
         </Col>
       </Row>

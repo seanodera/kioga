@@ -9,7 +9,7 @@ import {Link} from "react-router-dom";
 const About = () => {
     return (<Container className={'py-5'}>
         <h4 className={'text-secondary'}>About Kioga</h4>
-        <Row>
+        <Row className={'py-3'}>
             <Col md={'4'}>
                 <img src={images.at(20)} alt={'Company HQ'} style={{
                     width: '90%', aspectRatio: '1'
@@ -55,18 +55,7 @@ const About = () => {
                     We are an experienced contractor for both the national and county governments and have been offering
                     road and railway construction services since our founding 15 years ago.
                 </p>
-                <p>
-                    Praesent in ex lacus. Ut eu libero quis lorem tincidunt tincidunt. Ut eget orci diam. Vestibulum
-                    sit amet neque vitae nibh ultrices congue at id lectus. Nulla eget metus varius, sollicitudin
-                    magna id, auctor turpis. Nunc enim sapien, tempor in quam suscipit, sagittis commodo elit. In
-                    vel diam et enim sollicitudin mollis eu eget metus. Praesent eu lectus maximus, mollis tortor
-                    eu, commodo leo. Integer ac vehicula nisi. Etiam accumsan id libero sit amet porttitor. Aenean
-                    dictum justo at dignissim porttitor. Cras sollicitudin, urna sagittis consectetur lacinia,
-                    ligula leo lobortis metus, quis sollicitudin dolor dolor vitae ligula. Nunc quis elit ac nisi
-                    sagittis malesuada eu sit amet nunc. Curabitur nec sagittis nulla, quis feugiat lorem.
-                    Suspendisse blandit, dolor eu ullamcorper tristique, lectus ipsum vestibulum justo, vitae
-                    blandit sem purus et ex. Cras at mauris quis nisl porttitor ornare et vitae nisi.
-                </p>
+
 
             </Col>
         </Row></Container>)
