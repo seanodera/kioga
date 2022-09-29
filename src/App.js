@@ -1,7 +1,6 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
 import './css/App.scss';
-import './css/owl.theme.default.min.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from "./screens/Home";
