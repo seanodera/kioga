@@ -46,6 +46,24 @@ let works = [{
     description: 'Maecenas feugiat nisl non pharetra tempor. Pellentesque porttitor pulvinar dui, nec euismod sem facilisis sed. Sed efficitur faucibus pulvinar. Sed eu tortor eget odio venenatis egestas. Praesent quis massa vel justo vehicula varius ut pretium turpis. Nullam vel libero a ex egestas scelerisque ac ac nulla. Mauris eget lacinia velit, sit amet rhoncus nibh. Vestibulum rutrum et mauris eget sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse at arcu id purus lacinia tincidunt. Suspendisse non lobortis neque. Sed tincidunt eros ac augue elementum, vitae fringilla urna aliquet.',
     id: 8,
     type: 'remote location'
+}, {
+    image: '/assets/image7.jpg',
+    name: 'Apartment Complex',
+    description: 'Vestibulum lectus dolor, pellentesque sed blandit sed, tempor eget odio. Maecenas luctus mauris justo, eget fringilla justo fermentum aliquet. Aliquam imperdiet dapibus tellus sit amet ultricies. Duis tincidunt nibh quis lectus dapibus interdum. Duis a viverra tortor. Ut laoreet, justo sit amet posuere tincidunt, ipsum enim dictum quam, quis pulvinar turpis lorem sed urna. Morbi eu mauris sit amet sem aliquam venenatis in ac sapien. Donec sed iaculis nibh. Vestibulum ultricies sapien eget sem placerat, eget porta lacus vehicula. Etiam venenatis massa dignissim velit iaculis, in elementum quam dapibus. Suspendisse semper vulputate elit et imperdiet.',
+    id: 9,
+    type: 'residentual buildings'
+}, {
+    image: '/assets/image8.jpg',
+    name: 'Port Of Somewhere',
+    description: 'Integer egestas mi in arcu elementum, pharetra suscipit risus efficitur. Cras a vehicula dui, quis ultrices justo. Aliquam mattis sem euismod, mattis tellus nec, pretium lorem. Aliquam dignissim urna et auctor sollicitudin. Quisque facilisis placerat lectus eget sodales. Mauris condimentum tempus interdum. Quisque dolor nunc, bibendum ut diam ac, elementum tristique sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi finibus eget nisi nec blandit. Suspendisse purus magna, ornare non magna in, feugiat iaculis justo. Ut non augue erat. Nullam lorem urna, posuere vitae neque quis, vestibulum congue magna. Mauris et tincidunt elit.',
+    id: 10,
+    type: 'Heavy Equipment Installation'
+}, {
+    image: '/assets/image9.jpg',
+    name: 'Power Lines',
+    description: 'Maecenas feugiat nisl non pharetra tempor. Pellentesque porttitor pulvinar dui, nec euismod sem facilisis sed. Sed efficitur faucibus pulvinar. Sed eu tortor eget odio venenatis egestas. Praesent quis massa vel justo vehicula varius ut pretium turpis. Nullam vel libero a ex egestas scelerisque ac ac nulla. Mauris eget lacinia velit, sit amet rhoncus nibh. Vestibulum rutrum et mauris eget sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse at arcu id purus lacinia tincidunt. Suspendisse non lobortis neque. Sed tincidunt eros ac augue elementum, vitae fringilla urna aliquet.',
+    id: 11,
+    type: 'remote location'
 }]
 
 let colors = ['#76ff03', '#1DE9B6', '#FF1744',
@@ -53,4 +71,19 @@ let colors = ['#76ff03', '#1DE9B6', '#FF1744',
     '#FF9100', '#FF3d00', '#F50057']
 
 let images = ['/assets/image1.jpg', '/assets/image2.jpg', '/assets/image3.jpg', '/assets/image4.jpg', '/assets/image5.jpg', '/assets/image6.jpg', '/assets/image7.jpg', '/assets/image8.jpg', '/assets/image9.jpg', '/assets/image.10jpg', '/assets/aero1.jpg', '/assets/aero2.jpg', '/assets/const1.jpg', '/assets/const2.jpg', '/assets/cover.jpg', '/assets/error.jpg', '/assets/rail1.jpg', '/assets/rail2.jpg', '/assets/wind1.jpg', '/assets/wind2.jpg','/assets/kenya.jpg']
-export {works, colors, images}
+
+let testimonials = [
+    {
+        image: '/assets/person1.jpg',message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt, ex vel pharetra fringilla, urna mauris ornare neque, sit amet egestas lorem orci gravida diam. Sed viverra facilisis dapibus. Etiam sed tristique neque. Curabitur tristique, ex non ullamcorper pharetra, urna diam pharetra quam, commodo dignissim risus sem a risus. Ut vitae malesuada justo, sit amet consequat eros. Nam lobortis magna in laoreet laoreet. Morbi ultrices eleifend fringilla. Nam ac quam ut enim sagittis scelerisque at quis dui. Duis dictum tellus risus, a viverra nisi dictum in. Proin ipsum odio, ornare quis pulvinar mattis, pulvinar eget diam.',
+         name: 'Donna	Hamilton', position: 'purchasing Officer - EDC'
+    },
+    {
+        image: '/assets/person2.jpg',message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt, ex vel pharetra fringilla, urna mauris ornare neque, sit amet egestas lorem orci gravida diam. Sed viverra facilisis dapibus. Etiam sed tristique neque. Curabitur tristique, ex non ullamcorper pharetra, urna diam pharetra quam, commodo dignissim risus sem a risus. Ut vitae malesuada justo, sit amet consequat eros. Nam lobortis magna in laoreet laoreet. Morbi ultrices eleifend fringilla. Nam ac quam ut enim sagittis scelerisque at quis dui. Duis dictum tellus risus, a viverra nisi dictum in. Proin ipsum odio, ornare quis pulvinar mattis, pulvinar eget diam.',
+         name: 'John	Gray', position: 'CEO - NetVille'
+    },
+    {
+        image: '/assets/person3.jpg',message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt, ex vel pharetra fringilla, urna mauris ornare neque, sit amet egestas lorem orci gravida diam. Sed viverra facilisis dapibus. Etiam sed tristique neque. Curabitur tristique, ex non ullamcorper pharetra, urna diam pharetra quam, commodo dignissim risus sem a risus. Ut vitae malesuada justo, sit amet consequat eros. Nam lobortis magna in laoreet laoreet. Morbi ultrices eleifend fringilla. Nam ac quam ut enim sagittis scelerisque at quis dui. Duis dictum tellus risus, a viverra nisi dictum in. Proin ipsum odio, ornare quis pulvinar mattis, pulvinar eget diam.',
+         name: 'Wendy	Kelly', position: 'Contractor - GOVT'
+    },
+]
+export {works, colors, images, testimonials}

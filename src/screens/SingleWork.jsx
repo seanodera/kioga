@@ -1,6 +1,6 @@
 import React from 'react'
 import {Button, Col, Container, ListGroup, ListGroupItem, Row} from "react-bootstrap";
-import {works} from "../podo/SiteData";
+import {works} from "../podo/TempData";
 import {useParams} from "react-router";
 import {LinkContainer} from "react-router-bootstrap";
 

@@ -79,9 +79,9 @@ const MarketSection = () => {
                       text={'High quality material used to build energy sources backed by the\n' +
                           'support of our expert consultants to fulfill a whole range of\n' +
                           'applications in the enegy market.'}/>
-        {/*<SectionTypeB image={'/assets/aero1.jpg'} backgroundImage={'/assets/aero2.jpg'} title={'Aero Space'} text={'We are a leading Aerospace steels manufacturer. Our special grade\n' +*/}
-        {/*    'steels are being used in commercial and military aerospace projects\n' +*/}
-        {/*    'around the world.'}/>*/}
+        <SectionTypeB image={'/assets/aero1.jpg'} backgroundImage={'/assets/aero2.jpg'} title={'Aero Space'} text={'We are a leading Aerospace steels manufacturer. Our special grade\n' +
+            'steels are being used in commercial and military aerospace projects\n' +
+           'around the world.'}/>
 
     </Container>)
 }

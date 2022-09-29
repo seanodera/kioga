@@ -1,8 +1,8 @@
 import React from 'react'
-import {Carousel, CarouselItem, Col, Container, Row} from "react-bootstrap";
+import { Col, Container, Row} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import {BsArrowRight} from "react-icons/bs";
-import {works} from "../podo/SiteData";
+import {works} from "../podo/TempData";
 
 const PostedWork = ({work}) => {
 
@@ -60,10 +60,6 @@ const FeaturedWorks = () => {
                     <Row className={'colorThemeTrans'} >
                         {tempList.map((work, index) => <PostedWork key={index} work={work}/>)}
                     </Row>
-                    {/*<Carousel className={'colorThemeTrans'} >*/}
-                    {/*    {tempList.map((work, index) => <CarouselItem key={index}><PostedWork key={index}*/}
-                    {/*                                                                         work={work}/></CarouselItem>)}*/}
-                    {/*</Carousel>*/}
                 </Container>
             </div>
 

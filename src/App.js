@@ -7,7 +7,6 @@ import Header from './components/Header';
 import Home from "./screens/Home";
 import ErrorPage from "./screens/404";
 import SingleWork from "./screens/SingleWork";
-import Search from "./screens/Search";
 import Portfolio from "./screens/Portfolio";
 import {Container} from "react-bootstrap";
 import About from "./screens/About";
@@ -28,7 +27,6 @@ function App() {
                     <Route element={<Home/>} path={'/'}/>
                     <Route element={<Portfolio/>} path={'/portfolio'}/>
                     <Route path={'/portfolio/:id'} element={<SingleWork/>}/>
-                    <Route path={'/search/:keywords'} element={<Search/>}/>
                     <Route path={'/about'} element={<About/>}/>
                     <Route path={'/contact'} element={<Contact/>}/>
                     <Route path={'*'} element={<ErrorPage/>}/>

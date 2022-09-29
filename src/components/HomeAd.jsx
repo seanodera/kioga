@@ -29,17 +29,15 @@ const HomeAd = () => {
                                     alignItems: 'center',
                                 }}><h1 style={{
                                     fontSize: '4rem'
-                                }}>Kioga</h1> <h1 className={'text-secondary'} style={{
+                                }}>Real</h1> <h1 className={'text-secondary'} style={{
                                     fontSize: '4rem'
                                 }}
                                 >Construction</h1></span>
                                 <div style={{
                                     maxWidth: '50%',
-                                }}><p className={'limitLines'} style={{color: 'white'}}>During our long history, we have
-                                    built some of the most prominent
-                                    buildings in Kenya with inhouse training skills</p>
+                                }}><p className={'limitLines'} style={{color: 'white'}}>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                                 </div>
-                                <div>
+                                <div className='mb-3'>
                                     <LinkContainer to={'/about'}>
                                         <Button>
                                             Learn More

@@ -1,11 +1,10 @@
 import React from 'react'
-import {Col, Container, Nav, Navbar, NavLink, Row} from 'react-bootstrap'
+import {Col, Container, Navbar, NavLink, Row} from 'react-bootstrap'
 import {FaLocationArrow, FaMailBulk, FaPhone} from 'react-icons/fa'
 import {LinkContainer} from 'react-router-bootstrap'
 import {
     AiOutlineFacebook,
     AiOutlineInstagram,
-    AiOutlineLinkedin,
     AiOutlineMail,
     AiOutlineWhatsApp
 } from "react-icons/ai";
@@ -33,7 +32,7 @@ const Footer = () => {
                             <LinkContainer to={'/'}>
                               <span className='d-flex flex-row ' style={{
                                   alignItems: 'center',
-                              }}><h4 className={'text-white'} >Kioga</h4> <h4 className={'text-secondary'}>Construction</h4></span>
+                              }}><h4 className={'text-white'} >Real</h4> <h4 className={'text-secondary'}>Construction</h4></span>
                             </LinkContainer>
 
                             <p style={{
@@ -42,12 +41,12 @@ const Footer = () => {
                                 letterSpacing: '1px',
                                 fontSize: '0.875rem',
                             }}>
-                                A construction Company based in Nairobi.
-                                Been in the industry since 2008 and we have built everything from residential to commercial properties
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. 
                             </p>
                         </Col>
                         <Col sm={'12'} md={'4'} className={'border-end '}>
                             <h5 className='text-secondary'>Quick Links</h5>
+                            <FooterNav to={'/'} name='Home'/>
                             <FooterNav to={'/portfolio'} name='Portfolio'/>
                             <FooterNav to={'/about'} name='About'/>
                         </Col>

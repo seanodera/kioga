@@ -6,6 +6,7 @@ import MarketSection from "../components/MarketSection";
 import {MdOutlineHomeWork} from "react-icons/md";
 import {GiFactory, GiRailRoad} from "react-icons/gi";
 import {LinkContainer} from 'react-router-bootstrap'
+import Testimonials from './Testimonials';
 
 const Home = () => {
     return (
@@ -65,7 +66,7 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
-            <Container fluid className={'py-5'}>
+            <Container fluid className={'py-5 my-2'}>
                 <Row>
                     <Col sm={'12'} md={'4'} className={'text-white'}>
                         <MdOutlineHomeWork className={'my-3'}  size={40}/>
@@ -115,7 +116,7 @@ const Home = () => {
             <Container fluid>
                 <Row className={'py-3 px-0 mt-4 text-white'}>
                     <Col md={'6'}>
-                        <h2 className={'text-white'}>Kioga Construction's Story</h2>
+                        <h2 className={'text-white'}>Real Construction's Story</h2>
                     </Col>
                     <Col md={'6'} className={'text-start'}>
                         <p>
@@ -134,6 +135,8 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
+
+            <Testimonials/>
         </div>
     )
 }

@@ -5,12 +5,18 @@ import {LinkContainer} from "react-router-bootstrap";
 import {BsArrowRight} from "react-icons/bs";
 
 const Work = ({work}) => {
+  let colorIndex = 0;
+  if(work.id >= colors.length){
+    colorIndex = work.id - colors.length;
+  } else {
+    colorIndex = work.id;
+  }
   return (<Col md={'3'}>
     <LinkContainer to={'/portfolio/' + work.id} style={{
-      backgroundColor: colors.at(2),height: '100%'
+      backgroundColor: colors.at(colorIndex),height: '100%'
     }}>
       <Card className={'rounded-2 overflow-hidden pb-2 border-0'} style={{
-        backgroundColor: colors.at(2),
+        backgroundColor: colors.at(colorIndex),
       }} >
         <CardImg variant={'top'} src={work.image} style={{
           objectFit: 'cover',

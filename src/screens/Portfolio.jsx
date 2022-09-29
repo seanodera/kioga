@@ -3,18 +3,21 @@ import {Carousel, CarouselItem, Col, Container, NavLink, Row} from "react-bootst
 import {BsArrowRight} from "react-icons/bs";
 import {LinkContainer} from "react-router-bootstrap";
 import Work from "../components/Work";
-import {works} from "../podo/SiteData";
+import {works} from "../podo/TempData";
 
 
 const Portfolio = () => {
-
+    let tempList = []
+for (let i = 0; i < 4; i++) {
+    tempList.push(works.at(i));
+}
     return (
         <div style={{
             backgroundColor: '#262626'
         }}>
             <section className={'bg-dark'}>
                 <Carousel>
-                    {works.map((work, index) => {
+                    {tempList.map((work, index) => {
 
                         return (<CarouselItem className={'colorTheme-bg py-3 verticalCenter'} style={{
                             width: '100vw',
